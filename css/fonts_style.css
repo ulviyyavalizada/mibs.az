@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "ConquerorSans";
+	font-weight: 300;
+	font-style: normal;
+	src: url(../font/ConquerorSans/ConquerorSansLight/conquerorsanslight.eot);
+	src: url(../font/ConquerorSans/ConquerorSansLight/conquerorsanslight.eot?#iefix) format("embedded-opentype"), url(../font/ConquerorSans/ConquerorSansLight/conquerorsanslight.woff) format("woff"), url(../font/ConquerorSans/ConquerorSansLight/conquerorsanslight.ttf) format("truetype")
+}
+@font-face {
+	font-family: "ConquerorSans";
+	font-weight: 400;
+	font-style: normal;
+	src: url(../font/ConquerorSans/ConquerorSansRegular/conquerorsans.eot);
+	src: url(../font/ConquerorSans/ConquerorSansRegular/conquerorsans.eot?#iefix) format("embedded-opentype"), url(../font/ConquerorSans/ConquerorSansRegular/conquerorsans.woff) format("woff"), url(../font/ConquerorSans/ConquerorSansRegular/conquerorsans.ttf) format("truetype")
+}
+@font-face {
+	font-family: "ConquerorSans";
+	font-weight: 500;
+	font-style: normal;
+	src: url(../font/ConquerorSans/ConquerorSansMedium/conquerorsansmedium.eot);
+	src: url(../font/ConquerorSans/ConquerorSansMedium/conquerorsansmedium.eot?#iefix) format("embedded-opentype"), url(../font/ConquerorSans/ConquerorSansMedium/conquerorsansmedium.woff) format("woff"), url(../font/ConquerorSans/ConquerorSansMedium/conquerorsansmedium.ttf) format("truetype")
+}
+@font-face {
+	font-family: "ConquerorSans";
+	font-weight: 800;
+	font-style: normal;
+	src: url(../font/ConquerorSans/ConquerorSansBold/conquerorsans-bold.eot);
+	src: url(../font/ConquerorSans/ConquerorSansBold/conquerorsans-bold.eot?#iefix) format("embedded-opentype"), url(../font/ConquerorSans/ConquerorSansBold/conquerorsans-bold.woff) format("woff"), url(../font/ConquerorSans/ConquerorSansBold/conquerorsans-bold.ttf) format("truetype")
+}
