@@ -576,7 +576,7 @@
     max-width: unset;
   }
   .footer__top {
-    padding: 120px 0 80px;
+    padding: 50px 0 50px;
     position: relative;
   }
   .footer__top:before {
@@ -598,7 +598,7 @@
 }
 @media screen and (max-width: 767px) {
   .footer__top {
-    padding: 75px 0 30px;
+    padding: 65px 0 40px;
   }
 }
 @media screen and (max-width: 1550px) {
