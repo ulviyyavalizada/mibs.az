@@ -10,6 +10,16 @@
   }
 }
 @media screen and (max-width: 1229px) {
+  .reviews_and_solutions .center {
+    flex-direction: column;
+  }
+  .reviews_and_solutions .section.solutions {
+    width: 100%;
+  }
+  .reviews_and_solutions section.reviews {
+    width: 100%;
+    margin-top: 105px;
+  }
   .header {
     position: fixed;
     z-index: 9999;
@@ -483,40 +493,10 @@
     height: 12px;
   }
 }
-@media screen and (max-width: 1550px) {
-  .news {
-    float: left;
-    width: calc(50% - 15px);
-  }
-  .reviews {
-    float: right;
-    width: calc(50% + 15px);
-  }
-}
-@media screen and (max-width: 1230px) {
-  .news-and-reviews {
-    padding-bottom: 60px;
-  }
-  .news {
-    float: none;
-    width: auto;
-    max-width: 700px;
-    margin: 0 auto 80px;
-  }
-  .reviews {
-    float: none;
-    width: auto;
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
+
 @media screen and (max-width: 768px) {
   .news__item {
     margin: 0 15px 30px;
-  }
-  .reviews__slider {
-    margin: 0 15px 30px;
-    padding: 30px 10px;
   }
   .reviews__slider .owl-next {
     display: none;
@@ -557,6 +537,14 @@
     float: none;
     width: auto;
   }
+
+  section.reviews{
+    padding: 0 15px;
+  }
+
+  section.news {
+    padding: 80px 15px 120px;
+  }
 }
 @media screen and (max-width: 1550px) {
   .footer {
@@ -565,7 +553,6 @@
   .footer__title {
     font-size: 22px;
   }
-  
 }
 @media screen and (max-width: 1229px) {
   .section.solutions .center {
@@ -585,7 +572,7 @@
   .footer__title:not(.__contact .footer__title) {
     display: none;
   }
-  .__contact{
+  .__contact {
     min-width: unset;
     width: 100%;
     flex-direction: row;
@@ -1074,8 +1061,6 @@
   h2,
   .h2 {
     font-size: 46px;
-    margin: 0 30px 30px;
-    font-weight: 200;
   }
   h2.small-title,
   .h2.small-title {
@@ -1147,12 +1132,11 @@
   .h2 {
     font-size: 26px;
     line-height: 28px;
-    margin: 0 15px 30px;
     transform: translateX(0);
   }
   h2.small-title,
   .h2.small-title {
-    font-size: 20px;
+    font-size: 29px;
     margin: 0 15px 30px;
     transform: none;
   }
@@ -1184,10 +1168,15 @@
     font-size: 16px;
   }
   .section.solutions {
-    padding: 40px 0 0 0;
+    padding: 0px 15px 0;
   }
   .section.prices {
-    padding: 40px 0 0 0;
+    padding: 70px 0px 20px;
+  }
+
+  section.news{
+    max-width: unset;
+    width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1494,12 +1483,6 @@
   .solutions .subtitle {
     margin-bottom: 12px;
   }
-  .solutions h2.small-title,
-  .solutions .h2.small-title {
-    font-size: 25px;
-    line-height: 25px;
-    margin-bottom: 2px !important;
-  }
 
   .reviews__item-author {
     margin: 0;
@@ -1510,7 +1493,6 @@
   .consent {
     margin: 0 15px 15px !important;
   }
-
 }
 @media screen and (max-width: 700px) {
   .all-post-blog-card {
@@ -1601,7 +1583,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .banner__services{
+  .banner__services {
     flex-direction: column;
   }
   .banner__services a {
@@ -1715,9 +1697,6 @@
   }
 }
 @media screen and (max-width: 500px) {
-  section.section.solutions {
-    padding: 80px 0 20px;
-  }
   section.section.solutions .solutions_box {
     grid-template-columns: 1fr;
   }
