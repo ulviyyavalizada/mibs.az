@@ -285,24 +285,29 @@ button {
   padding: 80px 0 50px;
 }
 
-.reviews_and_solutions {
+.news_and_reviews {
   background-color: #f7f7f7;
-  padding: 90px 0px 90px;
+  padding: 10px 0px;
 }
 
-.reviews_and_solutions .center{
+.news_and_reviews .center {
   display: flex;
   gap: 30px;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
 .section.solutions {
-  width: calc(50% - 30px);
-  padding-top: 0;
-  padding: 0 30px;
+  width: 100%;
+  padding: 50px 0px 70px;
 }
 
-.section.solutions * {
+.section.solutions ._title,
+.section.solutions .solutions_box {
+  padding: 30px;
+}
+
+.section.solutions .center * {
   margin: 0;
 }
 
@@ -312,10 +317,9 @@ button {
 .section.solutions .solutions_box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  max-width: 850px;
   width: 100%;
-  padding-right: 23px;
-  padding-top: 30px;
+  padding-right: 53px;
+  padding-top: 5px;
   gap: 15px 50px;
 }
 .solutions_box .solution__item {
@@ -368,8 +372,8 @@ button {
 section.reviews {
   width: calc(50%);
 }
-section.reviews h2{
-  margin: 0 0 12px;
+section.reviews h2 {
+  margin: 0;
 }
 
 .reviews__slider {
@@ -688,6 +692,21 @@ main.inside {
 }
 section.section.portfolio-page {
   padding: 0 0 50px;
+}
+.section.portfolio h2 {
+  margin: 0;
+  margin-bottom: 12px;
+}
+.section.portfolio .center {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.section.portfolio .section__header {
+  margin: 0 30px;
+}
+.section.portfolio .btn.btn_center {
+  text-align: center;
 }
 .banner__scroll a::before {
   position: absolute;
@@ -1028,6 +1047,20 @@ header.header .tel::after {
   float: left;
 }
 
+.portfolio__item span {
+  color: #000;
+  font-size: 18px;
+  top: 40%;
+  padding: 20px 15px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  /* margin-left: -142px; */
+  width: 100%;
+}
+
 .portfolio__item:hover .portfolio-label {
   opacity: 1;
 }
@@ -1078,6 +1111,36 @@ header.header .tel::after {
 }
 .portfolio__cards {
   margin: 0 0 60px;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio__cards a{
+  position: relative;
+  transition: .2s;
+}
+
+.portfolio__cards ._text{
+  position: absolute;
+  top: 19%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  font-size: 18px;
+  color: #010101;
+}
+
+.portfolio__cards img {
+  width: 100%;
+  max-height: 270px;
+  
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio__cards a:hover{
+  transform: scale(1.02);
 }
 .call-to-action {
   background: url(../i/call-to-action.png);
@@ -1273,14 +1336,29 @@ header.header .tel::after {
 
 section.news {
   padding: 80px 30px 120px;
-  max-width: 920px;
+  width: calc(50%);
   margin: 0 auto;
 }
 
 section.news h2 {
-  margin: 0 0 12px;
+  margin: 0;
+  line-height: inherit;
 }
 
+section.news .section__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px 30px;
+  margin: 0 0 12px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+section.news .section__header a {
+  border-bottom: 1px solid;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
 section.news .news_boxes {
   display: grid;
@@ -3702,13 +3780,12 @@ section#section-review .reviews__item {
 .reviews__item {
   position: relative;
 }
-.reviews__item .read_pdf {
+.reviews__slider .reviews__item .read_pdf {
   font-size: 14px;
   border-bottom: 1px solid #e8ebf9;
   transition: all 0.2s ease-in;
-}
-.reviews__item .read_pdf {
   text-decoration: none;
+  margin-left: 30px;
 }
 .reviews__item:hover .read_pdf {
   opacity: 1;

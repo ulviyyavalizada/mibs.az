@@ -10,15 +10,53 @@
   }
 }
 @media screen and (max-width: 1229px) {
-  .reviews_and_solutions .center {
+  .section.portfolio .center{
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
+  .section.portfolio .section__header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0 30px;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-items: flex-start;
+  }
+  .section.portfolio h2{
+    margin-bottom: 0;
+  }
+  .section.portfolio .btn.btn_center{
+    padding: 4px 12px;
+    margin-top: 0;
+  }
+
+  .portfolio__cards{
+    padding: 0 30px;
+    gap: 12px;
+  }
+  .portfolio__cards img{
+    max-height: 200px;
+  }
+  .news_and_reviews {
+    padding: 30px 0px 40px;
+  }
+  .news_and_reviews .center {
     flex-direction: column;
   }
-  .reviews_and_solutions .section.solutions {
+  .news_and_reviews section.news {
     width: 100%;
   }
-  .reviews_and_solutions section.reviews {
+  section.reviews {
     width: 100%;
-    margin-top: 105px;
+    margin-top: 80px;
+    padding: 0 30px;
+  }
+  .reviews__slider {
+    padding: 45px 20px 85px;
   }
   .header {
     position: fixed;
@@ -131,6 +169,12 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .portfolio__cards{
+    grid-template-columns: 1fr;
+  }
+  section .portfolio__cards img{
+    max-height: 250px;
+  }
   .logo {
     width: 90px;
     height: 20px;
@@ -366,6 +410,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+  section.services .center{
+    padding: 0;
+  }
   .service__card {
     display: block;
     float: none;
@@ -389,10 +436,10 @@
   }
   .service__card-title {
     margin: 0;
-    padding: 30px 20px;
+    padding: 27px 30px;
     position: relative;
-    border-bottom: 1px solid #f5f5f5;
-    border-top: 1px solid #f5f5f5;
+    border-bottom: 3px solid #f5f5f5;
+    border-top: none;
   }
   .service__card-title.active .service__card-arrow {
     transform: rotate(90deg);
@@ -451,6 +498,26 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .section.portfolio .section__header{
+    padding: 0 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .portfolio__cards{
+    padding: 0 15px;
+  }
+  .portfolio__cards img{
+    max-height: 160px;
+  }
+  .reviews__slider .reviews__item .read_pdf{
+    margin-left: 15px;
+  }
+  .services__cards {
+    margin: 0;
+  }
+  .reviews__item-text {
+    margin: 0 0 10px;
+  }
   .prices__slider {
     margin: 0;
   }
@@ -538,12 +605,12 @@
     width: auto;
   }
 
-  section.reviews{
+  section.reviews {
     padding: 0 15px;
   }
 
   section.news {
-    padding: 80px 15px 120px;
+    padding: 60px 15px 20px;
   }
 }
 @media screen and (max-width: 1550px) {
@@ -1167,16 +1234,9 @@
   .big-paragraph p {
     font-size: 16px;
   }
-  .section.solutions {
-    padding: 0px 15px 0;
-  }
+
   .section.prices {
     padding: 70px 0px 20px;
-  }
-
-  section.news{
-    max-width: unset;
-    width: 100%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1479,6 +1539,14 @@
 @media screen and (max-width: 768px) {
   section.section.solutions .solutions_box {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.section.solutions ._title,
+  section.section.solutions .solutions_box {
+    padding: 15px;
+  }
+  section.section.solutions .solutions_box {
+    padding-right: 37px;
   }
   .solutions .subtitle {
     margin-bottom: 12px;
