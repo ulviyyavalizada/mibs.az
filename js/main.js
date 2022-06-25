@@ -1,42 +1,11 @@
+
 $(document).ready(function() {
     $(".nav-button").click(function() {
         $(this).toggleClass("active"), $(".main-nav").toggleClass("active")
     }), $(".footer__nav-button").click(function() {
         $(this).toggleClass("active"), $(".footer__nav").slideToggle(200)
     });
-    var t = $(".anim");
-
-    function e() {
-        for (var e = t.length - 1; 0 <= e; e--) window.pageYOffset + window.innerHeight >= $(t[e]).offset().top + 50 && $(t[e]).addClass("active")
-    }
-
-    function o() {
-        for (var e = $(window).scrollTop(), t = $(".parallax-1"), o = $(".parallax-2"), a = $(".parallax-3"), i = $(".parallax-4"), s = 0; s < t.length; s++) {
-            var r = e - $(t[s]).offset().top;
-            $(t[s]).css("transform", "translateY(" + (0 - .05 * r) + "px)")
-        }
-        for (s = 0; s < o.length; s++) {
-            r = e - $(o[s]).offset().top;
-            $(o[s]).css("transform", "translateY(" + (0 - .1 * r) + "px)")
-        }
-        for (s = 0; s < a.length; s++) {
-            r = e - $(a[s]).offset().top;
-            $(a[s]).css("transform", "translateY(" + (0 - .13 * r) + "px)")
-        }
-        for (s = 0; s < i.length; s++) {
-            r = e - $(i[s]).offset().top;
-            $(i[s]).css("transform", "translateY(" + (0 - .16 * r) + "px)")
-        }
-    }
-    e(), o(), $(window).scroll(function() {
-        e(), o(), 1 < window.pageYOffset ? $(".header_home").addClass("scrolled") : $(".header_home").removeClass("scrolled")
-    }), $(".banner__scroll").click(function() {
-        $("html, body").animate({
-            scrollTop: $(".banner").outerHeight() - $(".header").outerHeight()
-        }, 500)
-    }), $(".js-masonry").masonry({
-        itemSelector: ".js-masonry__item"
-    });
+    
     var a = '<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M35.41 5.41A2 2 0 0 0 32.6 2.6l-20 20a2 2 0 0 0 0 2.82l20 20a2 2 0 0 0 2.82-2.82L16.83 24 35.4 5.41z"/></svg>';
     
     $(".reviews__slider-wrapper").owlCarousel({
@@ -164,6 +133,39 @@ $(document).ready(function() {
     })
 });
 
+var t = $(".anim");
+
+function e() {
+    for (var e = t.length - 1; 0 <= e; e--) window.pageYOffset + window.innerHeight >= $(t[e]).offset().top + 50 && $(t[e]).addClass("active")
+}
+
+function o() {
+    for (var e = $(window).scrollTop(), t = $(".parallax-1"), o = $(".parallax-2"), a = $(".parallax-3"), i = $(".parallax-4"), s = 0; s < t.length; s++) {
+        var r = e - $(t[s]).offset().top;
+        $(t[s]).css("transform", "translateY(" + (0 - .05 * r) + "px)")
+    }
+    for (s = 0; s < o.length; s++) {
+        r = e - $(o[s]).offset().top;
+        $(o[s]).css("transform", "translateY(" + (0 - .1 * r) + "px)")
+    }
+    for (s = 0; s < a.length; s++) {
+        r = e - $(a[s]).offset().top;
+        $(a[s]).css("transform", "translateY(" + (0 - .13 * r) + "px)")
+    }
+    for (s = 0; s < i.length; s++) {
+        r = e - $(i[s]).offset().top;
+        $(i[s]).css("transform", "translateY(" + (0 - .16 * r) + "px)")
+    }
+}
+e(), o(), $(window).scroll(function() {
+    e(), o(), 1 < window.pageYOffset ? $(".header_home").addClass("scrolled") : $(".header_home").removeClass("scrolled")
+}), $(".banner__scroll").click(function() {
+    $("html, body").animate({
+        scrollTop: $(".banner").outerHeight() - $(".header").outerHeight()
+    }, 500)
+}), $(".js-masonry").masonry({
+    itemSelector: ".js-masonry__item"
+});
 
 
 var a = '<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M35.41 5.41A2 2 0 0 0 32.6 2.6l-20 20a2 2 0 0 0 0 2.82l20 20a2 2 0 0 0 2.82-2.82L16.83 24 35.4 5.41z"/></svg>';
