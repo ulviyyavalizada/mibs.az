@@ -10,12 +10,12 @@
   }
 }
 @media screen and (max-width: 1229px) {
-  .section.portfolio .center{
+  .section.portfolio .center {
     flex-direction: column;
     gap: 0;
     align-items: flex-start;
   }
-  .section.portfolio .section__header{
+  .section.portfolio .section__header {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -26,19 +26,19 @@
     margin-bottom: 20px;
     align-items: flex-start;
   }
-  .section.portfolio h2{
+  .section.portfolio h2 {
     margin-bottom: 0;
   }
-  .section.portfolio .btn.btn_center{
+  .section.portfolio .btn.btn_center {
     padding: 4px 12px;
     margin-top: 0;
   }
 
-  .portfolio__cards{
+  .portfolio__cards {
     padding: 0 30px;
     gap: 12px;
   }
-  .portfolio__cards img{
+  .portfolio__cards img {
     max-height: 200px;
   }
   .news_and_reviews {
@@ -169,10 +169,10 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .portfolio__cards{
+  .portfolio__cards {
     grid-template-columns: 1fr;
   }
-  section .portfolio__cards img{
+  section .portfolio__cards img {
     max-height: 250px;
   }
   .logo {
@@ -410,7 +410,7 @@
   }
 }
 @media screen and (max-width: 767px) {
-  section.services .center{
+  section.services .center {
     padding: 0;
   }
   .service__card {
@@ -498,18 +498,31 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .section.portfolio .section__header{
+  .news .card__type{
+    font-size: 12px;
+  }
+  .news .card__title {
+    font-size: 14px;
+  }
+
+  .news .card__date{
+    font-size: 10px;
+  }
+  .news .card__excerpt{
+    font-size: 12px;
+  }
+  .section.portfolio .section__header {
     padding: 0 15px;
     justify-content: center;
     margin-bottom: 30px;
   }
-  .portfolio__cards{
+  .portfolio__cards {
     padding: 0 15px;
   }
-  .portfolio__cards img{
+  .portfolio__cards img {
     max-height: 160px;
   }
-  .reviews__slider .reviews__item .read_pdf{
+  .reviews__slider .reviews__item .read_pdf {
     margin-left: 15px;
   }
   .services__cards {
@@ -526,6 +539,17 @@
   }
   .prices__slider .owl-next {
     right: 20px;
+  }
+
+  .tools .tools_slider {
+    margin: 0 15px;
+  }
+  .footer_main {
+    margin: 0 15px;
+  }
+
+  .footer__bottom {
+    padding: 15px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -652,7 +676,7 @@
 }
 @media screen and (max-width: 767px) {
   .footer__top {
-    padding: 65px 0 40px;
+    padding: 40px 0 37px;
   }
 }
 @media screen and (max-width: 1550px) {

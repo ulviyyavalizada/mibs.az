@@ -76,6 +76,54 @@ $(document).ready(function() {
         }
     });
 
+    $(".tools_slider-wrapper").owlCarousel({
+        nav: false,
+        dots: false,
+        navText: [a, a],
+        // autoplay: true,
+        // loop: true,
+        // autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2,
+                margin: 20,
+            },
+            768: {
+                items: 6,
+                margin: 30,
+            },
+            992: {
+                items: 8,
+                margin: 50,
+            }
+        }
+    });
+
+    $(".customers_slider-wrapper").owlCarousel({
+        nav: false,
+        dots: false,
+        navText: [a, a],
+        // autoplay: true,
+        // loop: true,
+        // autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2,
+                margin: 20,
+            },
+            768: {
+                items: 5,
+                margin: 30,
+            },
+            992: {
+                items: 6,
+                margin: 50,
+            }
+        }
+    });
+
     var s = "";
     $(".row__slider-wrapper").on("initialized.owl.carousel changed.owl.carousel", function(e) {
         var t = e.relatedTarget;
