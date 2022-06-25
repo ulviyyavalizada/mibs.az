@@ -58,13 +58,16 @@ $(document).ready(function() {
                 items: 2,
                 margin: 20,
             },
+            576: {
+                items: 3,
+            },
             768: {
                 items: 6,
                 margin: 30,
             },
             992: {
                 items: 8,
-                margin: 50,
+                margin: 35,
             }
         }
     });
@@ -80,13 +83,17 @@ $(document).ready(function() {
         responsive: {
             0: {
                 items: 2,
-                margin: 20,
+                margin: 25,
             },
             768: {
+                items: 4,
+                margin: 20,
+            },
+            1200: {
                 items: 5,
                 margin: 30,
             },
-            992: {
+            1550: {
                 items: 6,
                 margin: 50,
             }

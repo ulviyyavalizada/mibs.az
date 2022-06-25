@@ -508,42 +508,88 @@ section.customers h2 {
 section.customers .subtitle {
   margin-top: 0;
   font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .customers .customers_slider {
   margin: 0 30px;
 }
 
+.customers .customers_slider .owl-stage-outer{
+  padding: 30px 0;
+}
+
 .customers .customers_slider a {
-  background-color: white;
+  background-color: #ffcc01;
   display: block;
   height: 100%;
+  filter: drop-shadow(0px 7px 10px rgb(255 204 1 / 39%));
   position: relative;
   width: 100%;
+  margin: 50px 0;
 }
 
 .customers .customers_slider a::before {
   content: "";
   position: absolute;
-  top: -28.8675px;
+  top: -50px;
   left: 0;
-  width: 0;
+  width: 100%;
+  filter: drop-shadow(0px 7px 10px rgb(255 204 1 / 39%));
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 28.8675px solid red;
+  border-left: 103px solid transparent;
+  border-right: 103px solid transparent;
+  border-bottom: 50px solid #ffcc01;
 }
 .customers .customers_slider a::after {
   content: "";
   position: absolute;
-  bottom: -28.8675px;
+  bottom: -50px;
   left: 0;
-  width: 0;
+  filter: drop-shadow(0px 7px 10px rgb(255 204 1 / 39%));
+  width: 100%;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 28.8675px solid red;
+  border-left: 103px solid transparent;
+  border-right: 103px solid transparent;
+  border-top: 50px solid #ffcc01;
 }
+
+.customers .customers_slider ._img {
+  padding: 12px;
+}
+
+/* .customers .customers_slider ._img {
+  background-color: white;
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.customers .customers_slider ._img::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 50px solid white;
+}
+.customers .customers_slider ._img::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 50px solid white;
+} */
+
 /* 
 #hexagon {
   width: 100px;
@@ -576,7 +622,7 @@ section.customers .subtitle {
 
 .customers .customers_slider a img {
   width: 100%;
-  max-height: 110px;
+  max-height: 80px;
   height: 100%;
   object-fit: contain;
 }
@@ -619,9 +665,9 @@ section.tools .subtitle {
 }
 .tools .tools_slider a img {
   width: 100%;
-  max-height: 110px;
-  height: 100%;
+  height: 110px;
   object-fit: contain;
+  padding: 8px;
 }
 .owl-nav.disabled {
   display: none;
