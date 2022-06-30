@@ -21,6 +21,13 @@ $(document).ready(function() {
         navText: ["<img src='/i/icons/left.svg'><span>ÐŸÑ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰Ð¸Ð¹</span>", "<span>Ð¡Ð»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ð¹</span><img src='/i/icons/left.svg'>"]
     });
     
+    $(".news__slider-wrapper").owlCarousel({
+        autoplayHoverPause: false,
+        nav: !0,
+        items: 1,
+        margin: 30,
+        navText: [a, a]
+    });
     $(".prices__slider-wrapper").owlCarousel({
         nav: !0,
         margin: 0,

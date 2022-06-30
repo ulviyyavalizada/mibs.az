@@ -292,9 +292,7 @@ button {
 
 .news_and_reviews .center {
   display: flex;
-  gap: 30px;
   flex-direction: row-reverse;
-  align-items: center;
 }
 
 .section.solutions {
@@ -371,6 +369,7 @@ button {
 
 section.reviews {
   width: calc(50%);
+  padding: 80px 30px 120px;
 }
 section.reviews h2 {
   margin: 0;
@@ -501,9 +500,6 @@ section.reviews h2 {
 section.customers {
   padding: 90px 0 70px;
 }
-section.customers h2 {
-  margin-bottom: 6px;
-}
 
 section.customers .subtitle {
   margin-top: 0;
@@ -515,7 +511,7 @@ section.customers .subtitle {
   margin: 0 30px;
 }
 
-.customers .customers_slider .owl-stage-outer{
+.customers .customers_slider .owl-stage-outer {
   padding: 30px 0;
 }
 
@@ -1524,14 +1520,15 @@ section.news .section__header a {
   text-transform: uppercase;
 }
 
-section.news .news_boxes {
+.news .news_boxes .owl-item{
   display: grid;
   gap: 20px;
+  padding: 0 1px;
 }
 
 .news .card {
   display: flex;
-  height: 230px;
+  height: 240px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.1s ease;
 }
@@ -1541,10 +1538,6 @@ section.news .news_boxes {
   height: 100%;
   max-width: 550px;
   object-fit: cover;
-}
-
-.news .card:hover {
-  transform: scale(1.02);
 }
 
 .news .card__content {
@@ -1962,7 +1955,7 @@ section.news .news_boxes {
 }
 .footer__bottom {
   background: #151515;
-  padding: 20px 30px;
+  padding: 20px 0px;
 }
 
 .footer__bottom .center {
@@ -1971,6 +1964,10 @@ section.news .news_boxes {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
+}
+
+.footer__bottom .center > div {
+  padding: 0 30px;
 }
 
 .footer__bottom .center::after {

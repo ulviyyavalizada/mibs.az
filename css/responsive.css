@@ -64,7 +64,7 @@
     max-height: 200px;
   }
   .news_and_reviews {
-    padding: 30px 0px 40px;
+    padding: 60px 0px 40px;
   }
   .news_and_reviews .center {
     flex-direction: column;
@@ -74,7 +74,6 @@
   }
   section.reviews {
     width: 100%;
-    margin-top: 80px;
     padding: 0 30px;
   }
   .reviews__slider {
@@ -523,6 +522,9 @@
   .customers .customers_slider a {
     filter: drop-shadow(0px 7px 7px rgb(255 204 1 / 39%));
   }
+  .news_and_reviews {
+    padding-top: 20px;
+  }
   .news .card {
     height: 154px;
   }
@@ -537,7 +539,7 @@
     -webkit-line-clamp: 1;
     margin-bottom: 4px;
   }
-  .news .tag{
+  .news .tag {
     font-size: 11px;
   }
   .news .card__date {
@@ -585,7 +587,11 @@
   }
 
   .footer__bottom {
-    padding: 15px;
+    padding: 15px 0;
+  }
+
+  .footer__bottom .center > div {
+    padding: 0 15px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -670,7 +676,11 @@
   }
 
   section.news {
-    padding: 60px 15px 20px;
+    padding: 60px 15px 42px;
+  }
+
+  .section.solutions {
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 1550px) {
@@ -1171,12 +1181,12 @@
   }
   .subtitle p {
     font-size: 22px;
-    line-height: 32px;
+    line-height: 25px;
     color: #383838;
   }
   .subtitle {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 26px;
     color: #969696;
   }
   .pretitle {
@@ -1240,13 +1250,16 @@
   .section_no-padding {
     padding: 0;
   }
-  .section__header {
+  .section__header:not(.reviews .section__header) {
     padding-bottom: 0;
+  }
+  section.news .section__header a {
+    font-size: 12px;
   }
   .subtitle {
     margin: 0 15px 30px;
     font-size: 16px;
-    line-height: 36px;
+    line-height: 24px;
     color: #969696;
   }
   .pretitle {
@@ -1597,6 +1610,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  section.customers {
+    padding: 90px 0 20px;
+  }
+  section.customers .subtitle{
+    margin-bottom: 4px;
+  }
   section.section.solutions .solutions_box {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1607,6 +1626,7 @@
   }
   section.section.solutions .solutions_box {
     padding-right: 37px;
+    padding-top: 0;
   }
   .solutions .subtitle {
     margin-bottom: 12px;
