@@ -378,6 +378,7 @@ section.reviews h2 {
 .reviews__slider {
   background: #fff;
   padding: 65px;
+  min-height: 500px;
 }
 .reviews__slider .owl-dots {
   display: none;
@@ -462,7 +463,7 @@ section.reviews h2 {
 .reviews__item-text {
   color: #606060;
   position: relative;
-  height: 150px;
+  height: 205px;
   margin: 0 0 40px;
   overflow: hidden;
 }
@@ -1502,14 +1503,12 @@ section.news {
 
 section.news h2 {
   margin: 0;
-  line-height: inherit;
 }
 
 section.news .section__header {
   display: flex;
   justify-content: space-between;
   gap: 12px 30px;
-  margin: 0 0 12px;
   flex-wrap: wrap;
   align-items: flex-end;
 }

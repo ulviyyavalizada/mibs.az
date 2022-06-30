@@ -69,6 +69,7 @@
   .news_and_reviews .center {
     flex-direction: column;
   }
+  
   .news_and_reviews section.news {
     width: 100%;
   }
@@ -77,8 +78,10 @@
     padding: 0 30px;
   }
   .reviews__slider {
-    padding: 45px 20px 85px;
+    padding: 45px 20px 50px;
+    min-height: unset;
   }
+ 
   .header {
     position: fixed;
     z-index: 9999;
@@ -1139,6 +1142,10 @@
   .banner__scroll {
     bottom: 40px;
   }
+
+  .reviews__item-text{
+    height: 145px;
+  }
 }
 @media screen and (max-width: 1229px) {
   .banner {
@@ -1250,9 +1257,7 @@
   .section_no-padding {
     padding: 0;
   }
-  .section__header:not(.reviews .section__header) {
-    padding-bottom: 0;
-  }
+  
   section.news .section__header a {
     font-size: 12px;
   }
@@ -1610,6 +1615,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .reviews__item-text{
+    height: 200px;
+  }
   section.customers {
     padding: 90px 0 20px;
   }
