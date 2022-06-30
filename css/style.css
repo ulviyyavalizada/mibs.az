@@ -1519,7 +1519,7 @@ section.news .section__header a {
   text-transform: uppercase;
 }
 
-.news .news_boxes .owl-item{
+.news .news_boxes .owl-item {
   display: grid;
   gap: 20px;
   padding: 0 1px;
@@ -1557,6 +1557,7 @@ section.news .section__header a {
 
 .news .card__title {
   font-size: 18px;
+  line-height: 19px;
   color: #ffcc01;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
@@ -1577,6 +1578,7 @@ section.news .section__header a {
 
 .news .card__excerpt {
   font-size: 16px;
+  line-height: 18px;
   margin-bottom: 1em;
   overflow: hidden;
   text-overflow: ellipsis;

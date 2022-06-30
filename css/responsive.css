@@ -539,6 +539,7 @@
   }
   .news .card__title {
     font-size: 14px;
+    line-height: 15px;
     -webkit-line-clamp: 1;
     margin-bottom: 4px;
   }
@@ -550,6 +551,7 @@
   }
   .news .card__excerpt {
     font-size: 12px;
+    line-height: 14px;
     -webkit-line-clamp: 2;
   }
   .section.portfolio .section__header {
