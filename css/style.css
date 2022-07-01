@@ -284,6 +284,74 @@ button {
 .section {
   padding: 80px 0 50px;
 }
+.portfolio_inner_section {
+  padding: 200px 0px 170px;
+  min-height: 100vh;
+}
+
+.portfolio_inner_section .section__header {
+  padding: 0 30px;
+}
+
+.portfolio_inner_section .inner_contain {
+  padding: 0 30px;
+  display: flex;
+}
+
+.portfolio_inner_section * {
+  font-family: "Montserrat", sans-serif;
+}
+
+.portfolio_inner_section .left_box {
+  width: 40%;
+  padding-right: 50px;
+}
+
+.portfolio_inner_section .right_box {
+  width: 60%;
+}
+
+.portfolio_inner_section ._img {
+  margin-bottom: 13px;
+  margin-top: 13px;
+}
+
+.portfolio_inner_section ._img img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+  height: 100%;
+}
+
+.portfolio_inner_section .right_box ._text {
+  padding: 10px 0;
+  font-size: 17px;
+}
+
+.portfolio_inner_section h2 {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.portfolio_inner_section p {
+  margin: 0;
+}
+
+.portfolio_inner_section ._title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.portfolio_inner_section .inner_text {
+  margin-bottom: 30px;
+  margin-top: 13px;
+}
+
+.portfolio_inner_section .inner_text li {
+  line-height: 27px;
+  font-size: 17px;
+}
 
 .news_and_reviews {
   background-color: #f7f7f7;
@@ -847,6 +915,7 @@ main.inside {
   border-radius: 50px;
   box-sizing: border-box;
 }
+
 section.section.portfolio {
   padding: 120px 0 95px;
 }
