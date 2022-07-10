@@ -69,7 +69,7 @@
   .news_and_reviews .center {
     flex-direction: column;
   }
-  
+
   .news_and_reviews section.news {
     width: 100%;
   }
@@ -81,7 +81,7 @@
     padding: 45px 20px 50px;
     min-height: unset;
   }
- 
+
   .header {
     position: fixed;
     z-index: 9999;
@@ -520,6 +520,41 @@
   .price__item {
     width: 230px;
   }
+
+  .portfolio_inner_section {
+    padding: 120px 0px;
+  }
+
+  .portfolio_inner_section h2 {
+    margin-bottom: 15px;
+  }
+
+  .portfolio_inner_section .inner_contain {
+    flex-direction: column;
+  }
+
+  .portfolio_inner_section .left_box {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .portfolio_inner_section .right_box {
+    width: 100%;
+  }
+
+  .portfolio_inner_section .right_box ._text {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+
+  .portfolio_inner_section .inner_text li {
+    line-height: 24px;
+    font-size: 15px;
+  }
+
+  .portfolio_inner_section ._title {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 768px) {
   .customers .customers_slider a {
@@ -773,6 +808,12 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .portfolio_inner_section .inner_contain{
+    padding: 0 15px;
+  }
+  .portfolio_inner_section .section__header{
+    padding: 0 15px;
+  }
   .row__slider {
     padding-top: 120px;
   }
@@ -1145,7 +1186,7 @@
     bottom: 40px;
   }
 
-  .reviews__item-text{
+  .reviews__item-text {
     height: 145px;
   }
 }
@@ -1259,7 +1300,7 @@
   .section_no-padding {
     padding: 0;
   }
-  
+
   section.news .section__header a {
     font-size: 12px;
   }
@@ -1617,13 +1658,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .reviews__item-text{
+  .reviews__item-text {
     height: 200px;
   }
   section.customers {
     padding: 90px 0 20px;
   }
-  section.customers .subtitle{
+  section.customers .subtitle {
     margin-bottom: 4px;
   }
   section.section.solutions .solutions_box {
